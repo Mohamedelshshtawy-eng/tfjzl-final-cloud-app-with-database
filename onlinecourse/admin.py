@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Course, Lesson, Instructor, Learner, Question, Choice, Enrollment
+from .models import Course, Lesson, Instructor, Learner,Submission, Question, Choice, Enrollment
 
 
 class QuestionInline(admin.StackedInline):
@@ -36,3 +36,4 @@ admin.site.register(Learner)
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Choice)
 admin.site.register(Enrollment)
+admin.site.register(Submission)
